@@ -59,6 +59,7 @@ resource "aws_vpc" "dev_vpc" {
   tags = {
     Name    = "dev-vpc"
     Project = "Cloud-Provisioning-Task"
+    Owner   = "Ramkaran"
   }
 }
 
@@ -78,6 +79,7 @@ resource "aws_subnet" "dev_public_subnet" {
   tags = {
     Name    = "dev-public-subnet"
     Project = "Cloud-Provisioning-Task"
+    Owner   = "Ramkaran"
   }
 }
 
@@ -93,6 +95,7 @@ resource "aws_internet_gateway" "dev_igw" {
   tags = {
     Name    = "dev-igw"
     Project = "Cloud-Provisioning-Task"
+    Owner   = "Ramkaran"
   }
 }
 
@@ -113,6 +116,7 @@ resource "aws_route_table" "dev_public_rt" {
   tags = {
     Name    = "dev-public-rt"
     Project = "Cloud-Provisioning-Task"
+    Owner   = "Ramkaran"
   }
 }
 
@@ -162,6 +166,7 @@ resource "aws_security_group" "dev_sg" {
   tags = {
     Name    = "dev-server-sg"
     Project = "Cloud-Provisioning-Task"
+    Owner   = "Ramkaran"
   }
 }
 
@@ -187,6 +192,7 @@ resource "aws_instance" "dev_server" {
   tags = {
     Name    = "dev-server"
     Project = "Cloud-Provisioning-Task"
+    Owner   = "Ramkaran"
   }
 }
 

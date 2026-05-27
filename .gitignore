@@ -1,0 +1,27 @@
+# Terraform — never commit these
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+crash.log
+crash.*.log
+override.tf
+*_override.tf
+
+# Sensitive variable files
+*.tfvars
+*.tfvars.json
+!example.tfvars
+
+# Local mock/test helpers (not needed in submission)
+mock_aws_server.py
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+*.swp
+*.swo
